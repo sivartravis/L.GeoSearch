@@ -18,12 +18,12 @@
 	
 	<script type="text/javascript">
 		
-		var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png';
-		var basemap = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+		var mapboxUrl = 'http://{s}.tiles.mapbox.com/v3/landplanner.map-4y9ngu48/{z}/{x}/{y}.png';
+		var basemap = new L.TileLayer(mapboxUrl, {maxZoom: 17});
 		
 		var map = new L.Map('map', {
 			layers: [basemap], 
-			center: new L.LatLng(53.2, 5.8), zoom: 12 
+			center: new L.LatLng(44, -73), zoom: 10 
 		});
 
         new L.Control.GeoSearch({
